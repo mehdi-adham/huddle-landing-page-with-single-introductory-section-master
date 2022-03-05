@@ -42,7 +42,6 @@ p {
   background-size: contain;
   display: flex;
   flex-direction: column;
-  height: 100%;
   padding: 1.7rem 4.3rem;
 }
 .logo {
