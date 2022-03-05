@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /*overflow-x: scroll;
+  overflow-y: hidden;
+  width: 1440px;
+  height: 800px;*/
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-bottom: 22px;
+  font-size: 2.455em;
+  font-weight: 600;
+}
+p {
+  color: white;
+  margin: 12px 0;
+  line-height: 1.7rem;
+  font-size: 18px;
+}
+
+.Huddle {
+  background: var(--Violet) url(images/bg-desktop.svg) no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.7rem 4.3rem;
+}
+.logo {
+  width: 215px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 2.5rem;
+  padding-top: 5.5rem;
+  margin-left: 5px;
+}
+.form {
+  margin-top: 2.7rem;
+  padding-right: 1.5rem;
+}
+
+/* form button */
+.btn {
+  padding: 1rem 4rem;
+  background-color: white;
+  border-radius: 35px;
+  border: 0;
+  margin: 0.7rem 0;
+  color: var(--Violet);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--Soft-Magenta);
+  color: white;
+}
+
+/* social icon */
+.social-icon {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  padding: 1.4rem 0.7rem;
+}
+.social-icon div {
+  color: white;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: solid 1px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon div:hover {
+  color: var(--Soft-Magenta);
+  border: solid 1px var(--Soft-Magenta);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    /*width: 375px;
+    height: 800px;*/
+    width: 100%;
+  }
+  .logo {
+    margin-top: 2rem;
+    width: 130px;
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .Huddle {
+    text-align: center;
+    background: var(--Violet) url(images/bg-mobile.svg) no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 2rem;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 3.5rem;
+    gap: 1rem;
+  }
+  .form {
+    padding-right: 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+  .btn {
+    padding: 0.7rem 4.5rem;
+    color: var(--Violet);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 1.4rem 0;
+    margin-top: 1.8rem;
+  }
+  .social-icon div {
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: 12px;
+  }
+  .social-icon div:first-child{
+    font-size: 12px;
+  }
+}
